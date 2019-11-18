@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="51f17c70af09449bb83a776c52b66a04" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="GaiModel.Actor" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Cars" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Chassis" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Collor" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Constructor" Width="1.5" PointX="0.5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Drivers" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Engines" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Login" Width="1.5" PointX="7.625" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Model" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Penalties" Width="1.5" PointX="9.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Possession" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.sysdiagrams" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.TypeViolations" Width="1.5" PointX="7.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Users" Width="1.5" PointX="5.125" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Violations" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GaiModel.Сategory" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="GaiModel.FK_Users_Actor" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_Collor" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Cars_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Possession_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Model_Chassis" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Model_Constructor" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Possession_Drivers" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Model_Engines" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Login_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Model_Сategory" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Penalties_TypeViolations" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Violations_Possession" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Violations_TypeViolations" ManuallyRouted="false" />
+        <AssociationConnector Association="GaiModel.FK_Penalties_Violations" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
