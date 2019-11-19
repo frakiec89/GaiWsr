@@ -16,7 +16,7 @@ namespace GaiBL.Meneger
             {
                 try
                 {
-                    return Entities.Users.Where(x => x.Show == true). ToList();
+                    return Entities.Users.Where(x => x.Show == true).OrderBy(x => x.Name ).ToList();
                 }
                 catch
                 {

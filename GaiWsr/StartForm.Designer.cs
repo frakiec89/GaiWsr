@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btFormUser = new System.Windows.Forms.Button();
+            this.btActor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btFormUser
@@ -41,11 +42,22 @@
             this.btFormUser.UseVisualStyleBackColor = true;
             this.btFormUser.Click += new System.EventHandler(this.btFormUser_Click);
             // 
+            // btActor
+            // 
+            this.btActor.Location = new System.Drawing.Point(91, 144);
+            this.btActor.Name = "btActor";
+            this.btActor.Size = new System.Drawing.Size(107, 23);
+            this.btActor.TabIndex = 1;
+            this.btActor.Text = "Должности\r\n";
+            this.btActor.UseVisualStyleBackColor = true;
+            this.btActor.Click += new System.EventHandler(this.btActor_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(801, 422);
+            this.Controls.Add(this.btActor);
             this.Controls.Add(this.btFormUser);
             this.Name = "StartForm";
             this.Text = "Стартовая форма";
@@ -56,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button btFormUser;
+        private System.Windows.Forms.Button btActor;
     }
 }
 

@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ActorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ActorForm.Designer.cs">
+      <DependentUpon>ActorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddActor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddActor.Designer.cs">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AddChangeUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,11 @@
     <Compile Include="Forms\UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GaiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GaiDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +92,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ActorForm.resx">
+      <DependentUpon>ActorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddActor.resx">
+      <DependentUpon>AddActor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddChangeUserForm.resx">
       <DependentUpon>AddChangeUserForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +116,17 @@
     <EmbeddedResource Include="StartForm.resx">
       <DependentUpon>StartForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="GaiDataSet.xsc">
+      <DependentUpon>GaiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GaiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GaiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GaiDataSet.xss">
+      <DependentUpon>GaiDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

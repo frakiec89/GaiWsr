@@ -59,6 +59,7 @@ namespace GaiBL.Meneger
             try
             {
                 entities.Actor.Add(actor);
+                entities.SaveChanges();
             }
             catch
             {

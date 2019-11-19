@@ -17,15 +17,18 @@ namespace GaiWsr
         {
             InitializeComponent();
 
-          
-
-           
         }
 
         private void btFormUser_Click(object sender, EventArgs e)
         {
             Forms.UserForm userForm = new Forms.UserForm();
             userForm.Show();
+        }
+
+        private void btActor_Click(object sender, EventArgs e)
+        {
+            Forms.ActorForm actor  = new Forms.ActorForm();
+            actor.Show();
         }
     }
 }
